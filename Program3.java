@@ -1,38 +1,18 @@
+//Multiply two float number
+
 import java.util.*;
-import java.lang.*;
-class Demo
-{
-    public int iNo;
-    Demo()
-    {
-        iNo=0;
-    }
-    void DisplayNumbers(int iNo)
-    {
-        int i=0;
-        if(iNo==0)
-        {
-            return;
-        }
-        if(iNo<0)
-        {
-            iNo=-iNo;
-        }
-        for(i=1;i<=iNo;i++)
-        {
-            System.out.println(+i);
-        }
-    }
-}
+
+
 class Program3
 {
     public static void main(String arg[])
     {
-        Demo dobj=new Demo();
-        int iValue=0;
-        System.out.println("enter number");
+        float ino1=0.0f,ino2=0.0f;
+        System.out.println("Enter two float numbers");
         Scanner sobj=new Scanner(System.in);
-        iValue=sobj.nextInt();
-        dobj.DisplayNumbers(iValue);
+        ino1=sobj.nextFloat();
+        ino2=sobj.nextFloat();
+        float fRet=ino1*ino2;
+        System.out.println("Multiplication is:"+fRet);
     }
 }
